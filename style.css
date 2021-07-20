@@ -14,6 +14,7 @@ html body{
 .mega-area{
     position: absolute;
     width: 100%;
+    overflow: auto;
     left: 0;
     right: 0;
     padding: 15px;
