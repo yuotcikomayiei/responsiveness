@@ -218,12 +218,12 @@ p{
 }
 
 /*responsiveness for Galaxy fold*/
- @media screen and (max-width: 653px){ 
+ @media screen and (max-width: 720px){ 
     .homepage-img{
         height: 50vh;
     }
     h2{
-        font-size: 30px;
+        font-size: 20px;
     }
     .menu-btn{
       padding: 5px;
