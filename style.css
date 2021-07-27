@@ -1,0 +1,324 @@
+/*
+colors used:
+#064420   dark green
+#79D70F   light green
+#00541A   complete dark green
+*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*navbar style here*/
+
+.navbar{
+    margin-top: 0px;
+}
+.Nav-bar{
+    background-color: #064420;
+}
+.header{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.navbar-nav .nav-item .nav-link{
+    color: #fff;
+    font-size: 21px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: #000;
+    opacity: 0.5s;
+}
+
+/*sub-menu style here*/
+
+.drop-area{
+    position: static;
+}
+.drop-menu{
+    position: absolute;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: scroll;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    color: #fff;
+    font-family: serif;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: #00541A;
+    opacity: 0.7;
+}
+
+/*scroll property for min screen size 500*/
+
+.dropdown-menu{
+   max-height: 300px;
+   overflow-y: scroll;
+}
+
+.dropdown-item{
+    padding: 5px 0;
+    color: #fff;
+}
+
+/*Hamburger menu style here*/
+
+.navbar-toggler{
+    width: 70px;
+    height: 44px;
+    background-color: none;
+}
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    height: 5px;
+    padding: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    border-radius: 50px;
+}
+.custom-toggler{
+    color: #fff;
+    background-color: black;
+}
+
+/*font generated for website*/
+
+h5{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*logo area here*/
+
+.logo{
+    color: #fff;
+    font-size: 35px;
+}
+.pull-left{
+    height: 70px;
+    width: 100px;
+    position: relative;
+    font-size: 30px;
+}
+.slide{
+    height: 110vh;
+    width: 100%;
+}
+
+.btn{
+    font-size: 30px;
+    background-color: transparent;
+    border: 2px solid green;
+    border-radius: 3px;
+    margin-bottom: 50px;
+}
+
+/*Homepage desgin here */
+
+.container-content {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+  color: #000;
+  position: relative;
+}
+.color{
+    color: #F3F4ED;
+}
+.homepage-img{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+/*.homepage-img:hover{
+    opacity: 1;
+}*/
+.homepage-img .centered-text{
+    position: fixed;
+}
+.centered-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 25px;
+  transform: translate(-50%, -50%);
+}
+h2{
+    font-size: 60px;
+    font-weight: 900;
+    width: 100%;
+    color: #fff;
+}
+p{
+    color: red;
+    font-style: italic;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.menu-btn{
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #79D70F;
+    border-radius: 5%;
+    background-color: #064420;
+    color: #fff;
+}
+.menu-btn:hover{
+    background-color: transparent;
+}
+
+/*responsiveness of the homepage text*/
+@media screen and (max-width: 500px){
+    h2{
+    font-size: 35px;
+    font-weight: 800;
+     }
+    p{
+    font-size: 20px;
+    width: 100%;
+    }
+    .centered{
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        height: 20vh;
+    }
+    .homepage-img{
+        height: auto;
+    }
+    .menu-btn{
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 5%;
+    }
+}
+
+@media screen and (max-width: 568px){
+    .centered{
+        left: 50%;
+        top: 50%;
+        height: 15vh;
+    }
+    .dropdown-menu{
+      max-height: 200px;
+      overflow-y: scroll;
+    }
+}
+
+/*responsiveness for Galaxy fold*/
+ @media screen and (max-width: 653px){ 
+    .homepage-img{
+        height: 50vh;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .menu-btn{
+      padding: 5px;
+    }
+    p{
+    font-size: 20px;
+    width: 100%;
+    color: #DBF6E9;
+ }
+ .drop-menu{
+    max-height: 150px;
+ }
+ .dropdown-menu{
+   max-height: 100px;
+   overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 1024px){
+      .dropdown-menu{
+   max-height: 380px;
+   overflow-y: scroll;
+  }
+  .centered{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     font-size: 25px;
+     width: 100%;
+     height: 10vh;
+  }
+  .homepage-img{
+    height: auto;
+  }
+}
+
+/*services section*/
+.services{
+  background: #fff;
+  text-align: center;
+  width: 100%;
+}
+.services h1{
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  color: #000;
+}
+.cen{
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+}
+.service{
+  display: inline-block;
+  width: calc(100% / 3);
+  margin: 0 -2px;
+  padding: 20px;
+  color: #000;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.service:hover{
+  background: #79D70F;
+  color: #fff;
+}
+.service i{
+  color: #3498db;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.service h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+  color: #000;
+}
+.service p{
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .service{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .service{
+    width: 100%;
+  }
+}
+
